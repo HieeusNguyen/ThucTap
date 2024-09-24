@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/reset.css">
+
+    <link rel="stylesheet" href="./assets/dangkymuahang.css">
+</head>
+<body>
+    <main>
+        <nav class="navbar">
+            <a href="#!">
+                <img src="./image/menu-icon.png" alt="">
+            </a>
+            <div class="features">
+                <div class="feature-1">
+                    <a href="./quanlygoidichvu.html">QUẢN LÝ GÓI DICH VỤ</a>
+                    <img src="./image/right-icon.png" alt="">
+                </div>
+                <div class="feature-2">
+                    <a href="./quanlyapikeytoken.html">QUẢN LÝ API KEY/TOKEN</a>
+                </div>
+            </div>
+            <a href="#!" class="left">
+                <img src="./image/left-icon.png" alt="">
+            </a>
+        </nav>
+        <div class="content">
+            <div class="tool">
+                <div class="action">
+                    <a href="#!" class="task">
+                        <img src="./image/task-icon.png" alt="">
+                    </a>
+                    <a href="#!" class="bell">
+                        <img src="./image/bell-icon.png" alt="">
+                    </a>
+                    <a href="#!" class="user">
+                        <span>Xin chào [Họ tên]</span>
+                        <img src="./image/down-icon.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="body">
+                <div class="container">
+                    <div class="header">
+                        <h2>ĐĂNG KÝ MUA HÀNG</h2>
+                    </div>
+                    <div class="wrap">
+                        <div class="version-section">
+                            <label for="version" class="version">Phiên bản:</label>
+                            <input type="radio" id="trial" name="version" value="Thử nghiệm">
+                            <label for="trial">THỬ NGHIỆM</label>
+                            <input type="radio" id="application" name="version" value="Ứng dụng" checked>
+                            <label for="application">ỨNG DỤNG</label>
+                        </div>
+                
+                        <div class="pricing-section">
+                            <h3>Tính giá chi tiết</h3>
+                            <table>
+                                <tr>
+                                    <th>Gói sản phẩm/Dịch vụ</th>
+                                    <th>Đơn vị tính</th>
+                                    <th>Số lượng</th>
+                                    <th>Đơn giá (VND)</th>
+                                    <th>Thành tiền</th>
+                                </tr>
+                                <tr>
+                                    <td>Gói nâng cao</td>
+                                    <td>Năm</td>
+                                    <td>
+                                        <div class="number">
+                                            <button>-</button>
+                                            <input type="number" value="1"  min="1">
+                                            <button>+</button>
+                                        </div>
+                                    </td>
+                                    <td style="font-weight: 600;">6.450.000</td>
+                                    <td style="font-weight: 600;">6.450.000</td>
+                                </tr>
+                            </table>
+                        </div>
+                
+                        <div class="resource-section">
+                            <h3>Thông tin tài nguyên</h3>
+                            <p>Ngày hết hạn: <strong>25/02/2024</strong></p>
+                        </div>
+                
+                        <div class="api-info-section">
+                            <table>
+                                <tr>
+                                    <th>TÊN API</th>
+                                    <th>URL</th>
+                                    <th>MÔ TẢ</th>
+                                    <th>POLICY</th>
+                                </tr>
+                                <tr>
+                                    <td>API tích hợp hệ thống quản lý nhân sự</td>
+                                    <td>.console-apicertification/profile</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>API tích hợp với hệ thống ký số</td>
+                                    <td>.console-apicertification/profile/create</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>Xem chi tiết profile</td>
+                                    <td>.console-apicertification/profile/create</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                            </table>
+                        </div>
+                
+                        <div class="buttons">
+                            <button class="cancel-btn">Hủy</button>
+                            <button class="order-btn" id="order-btn">Đặt hàng</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Fixed-->
+                <div class="modal">
+                    <div class="container">
+                        <div class="header">
+                            <h2>ĐĂNG KÝ MUA HÀNG</h2>
+                        </div>
+                        <div class="wrap">
+                            <div class="form-container">
+                                <div class="form-group">
+                                    <label for="username">Tên đăng nhập:</label>
+                                    <input type="text" id="username" value="minhanh01" placeholder="Username">
+                                </div>
+                        
+                                <div class="form-group">
+                                    <label for="phone">Số điện thoại:</label>
+                                    <input type="text" id="phone" value="0987338741" placeholder="Password">
+                                </div>
+                        
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" value="" placeholder="Nhập email">
+                                </div>
+                            </div>
+                            <div class="version-section">
+                                <input type="radio" name="checkout" value="Tiền mặt">
+                                <label for="cash">Tiền mặt</label>
+                                <input type="radio" name="checkout" value="Chuyển khoản" checked>
+                                <label for="banking">Chuyển khoản</label>
+                            </div>
+                    
+                            <div class="buttons">
+                                <button class="cancel-btn" id="back-btn">Quay lại</button>
+                                <button class="order-btn" id="banking" style="padding: 10px;">Thanh toán</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Close -->
+                <div class="modal-close">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="icon-container">
+                            <img src="https://img.icons8.com/color/48/000000/checkmark--v2.png" alt="Success">
+                        </div>
+                        <p>ANH/CHỊ ĐÃ ĐĂNG KÝ GÓI NÂNG CAO THÀNH CÔNG</p>
+                        <button class="close-btn">Đóng</button>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const orderButton = document.querySelector('#order-btn')
+        const modalOrder = document.querySelector('.modal')
+        const backButton = document.querySelector('#back-btn')
+        const bankingButton = document.querySelector('#banking')
+        const modalClose = document.querySelector('.modal-close')
+        const closeButton = document.querySelector('.close')
+        const closeBtn = document.querySelector('.close-btn')
+
+        orderButton.addEventListener('click', () => {
+            modalOrder.style.display = "flex"
+        })
+
+        backButton.addEventListener('click', () => {
+            modalOrder.style.display = "none"
+        })
+
+        bankingButton.addEventListener("click", () => {
+            modalClose.style.display = "flex"
+            modalOrder.style.display = "none"
+        })
+
+        closeButton.addEventListener('click', () => {
+            modalClose.style.display = "none"
+        })
+
+        closeBtn.addEventListener('click', () => {
+            modalClose.style.display = "none"
+        })
+    </script>
+</body>
+</html>

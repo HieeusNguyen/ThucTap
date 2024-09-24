@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản</title>
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/signup.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Đăng ký tài khoản</h2>
+        <form>
+          <div class="form-group">
+            <label for="ho">Họ</label>
+            <div class="in-warning">
+                <input type="text" id="ho" name="ho" placeholder="Nhập vào họ" required>
+                <span class="warning">Vui lòng nhập đủ thông tin</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="ten">Tên</label>
+            <div class="in-warning">
+                <input type="text" id="ten" name="ten" placeholder="Nhập vào tên" required>
+                <span class="warning">Vui lòng nhập đủ thông tin</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="ten-dang-nhap">Tên đăng nhập</label>
+            <div class="in-warning">
+                <input type="text" id="ten-dang-nhap" name="ten-dang-nhap" placeholder="Nhập tên đăng nhập" required>
+                <span class="warning">Vui lòng nhập đúng định dạng: Viết liền không  dấu, tối đa 25 ký tự.</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <div class="in-warning">
+                <input type="email" id="email" name="email" placeholder="Nhập email" required>
+                <span class="warning">Vui lòng nhập đúng định dạng!</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="so-dien-thoai">Số điện thoại</label>
+            <div class="in-warning">
+                <input type="tel" id="so-dien-thoai" name="so-dien-thoai" placeholder="Nhập số điện thoại" required>
+                <span class="warning">Vui lòng nhập đúng định dạng: Bao gồm 12 đến 15 số.</span>
+            </div>
+          </div>
+          <div class="btn-cta">
+            <a href="#">Quay lại</a>
+            <button type="submit">Đăng ký</button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
