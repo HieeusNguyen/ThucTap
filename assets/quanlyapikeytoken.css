@@ -132,3 +132,104 @@ display: flex;
 .action span{
     font-family: sans-serif;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 20px;
+    gap: 100px;
+}
+
+.radio-group label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group input{
+    width: 600px;
+}
+
+.form-group span{
+    color: red;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon input {
+    padding: 8px 40px 8px 12px;
+    font-size: 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.calendar-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+input[type="text"], input[type="password"]  {
+    padding: 8px 12px;
+    font-size: 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.container textarea{
+    width: 600px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-family: 'Arial', sans-serif;
+}

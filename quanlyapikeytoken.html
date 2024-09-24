@@ -42,9 +42,72 @@
                 </div>
             </div>
             <div class="body">
-                
+                    <form>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="option" value="option1"  onclick="updateContent()"> API KEY
+                            </label>
+                            <label>
+                                <input type="radio" name="option" value="option2"  onclick="updateContent()"> TOKEN
+                            </label>
+                        </div>
+                        <div id="content">
+                            <!-- Nội dung sẽ thay đổi ở đây -->
+            
+                        </div>
+                    </form>
             </div>
         </div>
     </main>
+    <script>
+        function updateContent() {
+            const contentDiv = document.getElementById('content');
+            const selectedOption = document.querySelector('input[name="option"]:checked');
+
+            if (selectedOption) {
+                if (selectedOption.value === 'option1') {
+                    contentDiv.innerHTML = `<div class="form-group">
+                                <label for="expiry-time">Exsprise time<span>*</span></label>
+                                <div class="input-with-icon">
+                                <input type="text" id="expiry-time" value="23/02/2023 | 15:20:00">
+                                <span class="calendar-icon">📅</span>
+                                </div>
+                            </div>
+            
+                            <div class="form-group">
+                                <label for="domain">Domain<span>*</span></label>
+                                <input type="text" id="domain" value="hilo.vn" required>
+                            </div>
+            
+                            <div class="form-group">
+                                <label for="ip">IP<span>*</span></label>
+                                <input type="text" id="ip" value="192.168.1.1" required>
+                            </div>
+
+                            <div class="center">
+                                <button type="submit" class="submit-btn">TẠO API KEY</button>
+                            </div>
+
+                            <div class="container">
+                                <label for="ip">API KEY</label>
+                                <textarea name="api-key" id="api-key" rows="9"></textarea>
+                            </div>`;
+                } else if (selectedOption.value === 'option2') {
+                    contentDiv.innerHTML = `<div class="form-group">
+                                <label for="domain">Consumer Key<span>*</span></label>
+                                <input type="text" id="domain" value="hilo.vn" required>
+                            </div>
+            
+                            <div class="form-group">
+                                <label for="ip">Consumer serect<span>*</span></label>
+                                <input type="password" id="ip" value="192.168.1.1" required>
+                            </div>
+                            <div class="center">
+                                <button type="submit" class="submit-btn">TẠO ACCESS TOKEN</button>
+                            </div>`;
+                }
+            }
+        }
+    </script>
 </body>
 </html>

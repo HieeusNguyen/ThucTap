@@ -42,7 +42,45 @@
                 </div>
             </div>
             <div class="body">
-                
+                    <div class="filters">
+                        <input type="date" class="date-picker">
+                        <input type="date" class="date-picker">
+                        <input type="date" class="date-picker">
+                        <div class="box">
+                            <img src="./image/search-icon.png" alt="">
+                            <input type="text" placeholder="Tìm kiếm theo tên package" class="search-box">
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>TÊN PACKAGE</th>
+                                <th>NGÀY MUA</th>
+                                <th>NGÀY BẮT ĐẦU DỊCH VỤ</th>
+                                <th>NGÀY HẾT HẠN</th>
+                                <th>TRẠNG THÁI</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gói miễn phí</td>
+                                <td>15/02/2023</td>
+                                <td>20/02/2023</td>
+                                <td>20/02/2024</td>
+                                <td><span class="status expired">Hết hạn</span></td>
+                                <td><button class="action-btn"><img src="./image/sort-icon.png" alt=""></button></td>
+                            </tr>
+                            <tr>
+                                <td>Gói nâng cao</td>
+                                <td>23/08/2023</td>
+                                <td>27/08/2023</td>
+                                <td>27/08/2026</td>
+                                <td><span class="status active">Đang hoạt động</span></td>
+                                <td><button class="action-btn"><img src="./image/sort-icon.png" alt=""></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
             </div>
         </div>
     </main>
