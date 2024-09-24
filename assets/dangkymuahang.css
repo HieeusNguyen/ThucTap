@@ -37,7 +37,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* Navigation-Bar */
 .navbar{
-    width: 265px;
+    width: 300px;
     height: 100vh;
     background-color: #000;
     padding: 20px;
@@ -71,7 +71,7 @@ input[type="number"]::-webkit-outer-spin-button {
     display: block;
 }
 
-.feature-1, .feature-2{
+.feature-1, .feature-2, .feature-3{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,7 +83,7 @@ input[type="number"]::-webkit-outer-spin-button {
     height: 20px;
 }
 
-.feature-1 a,.feature-2 a{
+.feature-1 a,.feature-2 a, .feature-3 a{
     color: #999;
 }
 

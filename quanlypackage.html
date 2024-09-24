@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/quanlypackage.css">
+</head>
+<body>
+    <main>
+        <nav class="navbar">
+            <a href="./index.html">
+                <img src="./image/menu-icon.png" alt="">
+            </a>
+            <div class="features">
+                <div class="feature-1">
+                    <a href="./quanlygoidichvu.html">QUẢN LÝ GÓI DICH VỤ</a>
+                </div>
+                <div class="feature-4">
+                    <a href="./quanlypackage.html">QUẢN LÝ PACKAGE</a>
+                    <img src="./image/right-icon.png" alt="">
+                </div>
+                <div class="feature-2">
+                    <a href="./quanlyapikeytoken.html">QUẢN LÝ API KEY/TOKEN</a>
+                </div>
+                <div class="feature-3">
+                    <a href="./quanlyapikeytoken.html">QUẢN LÝ ĐẶT HÀNG</a>
+                </div>
+            </div>
+            <a href="#!" class="left">
+                <img src="./image/left-icon.png" alt="">
+            </a>
+        </nav>
+        <div class="content">
+            <div class="tool">
+                <div class="action">
+                    <a href="#!" class="task">
+                        <img src="./image/task-icon.png" alt="">
+                    </a>
+                    <a href="#!" class="bell">
+                        <img src="./image/bell-icon.png" alt="">
+                    </a>
+                    <a href="#!" class="user">
+                        <span>Xin chào [Họ tên]</span>
+                        <img src="./image/down-icon.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="body">
+                <div class="wrap">
+                    <a href="#!" class="create-package">
+                        <img src="./image/plus-icon.png" alt="">
+                        <span>Tạo package</span>
+                    </a>
+                    <div class="filters">
+                        <input type="date" class="date-picker">
+                        <div class="box">
+                            <img src="./image/search-icon.png" alt="">
+                            <input type="text" placeholder="Tìm kiếm theo tên package" class="search-box">
+                        </div>
+                    </div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>TÊN PACKAGE</th>
+                            <th>API</th>
+                            <th>THỜI GIAN TẠO/CẬP NHẬT</th>
+                            <th>PHIÊN BẢN</th>
+                            <th>TRẠNG THÁI</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                                <td>Gói miễn phí</td>
+                                <td>3 API</td>
+                                <td>23/01/2023 | 15:00:00</td>
+                                <td>Thử nghiệm</td>
+                                <td><span class="status active">Đang hoạt động</span></td>
+                                <td><button class="action-btn update"><img src="./image/update-icon.png" alt=""></button>
+                                    <button class="action-btn delete"><img src="./image/delete-icon.png" alt=""></button></td>
+                            </tr>
+                        <tr>
+                            <td>Gói cơ bản</td>
+                            <td>10 API</td>
+                            <td>24/01/2023 | 10:25:10</td>
+                            <td>Ứng dụng</td>
+                            <td><span class="status expired">Ngừng hoạt động</span></td>
+                            <td><button class="action-btn update"><img src="./image/update-icon.png" alt=""></button>
+                                <button class="action-btn delete"><img src="./image/delete-icon.png" alt=""></button></td>
+                        </tr>
+                        <tr>
+                            <td>Gói nâng cao</td>
+                            <td>20 API</td>
+                            <td>25/01/2023 | 11:00:20</td>
+                            <td>Ứng dụng</td>
+                            <td><span class="status active">Đang hoạt động</span></td>
+                            <td><button class="action-btn update"><img src="./image/update-icon.png" alt=""></button>
+                                <button class="action-btn delete"><img src="./image/delete-icon.png" alt=""></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Modal Create Package -->
+         <div class="modal">
+             <div class="container">
+                 <h2>TẠO MỚI PACKAGE</h2>
+                 <form>
+                     <!-- Tên package -->
+                     <div class="form-group">
+                         <label for="package-name">Tên package<span>*</span></label>
+                         <input type="text" id="package-name" value="Gói nâng cao" required>
+                     </div>
+         
+                     <!-- Phiên bản -->
+                     <div class="form-group">
+                         <label>Phiên bản <span>*</span></label>
+                         <div class="radio-group">
+                             <label><input type="radio" name="version" value="trial"> Thử nghiệm</label>
+                             <label><input type="radio" name="version" value="application" checked> Ứng dụng</label>
+                         </div>
+                     </div>
+         
+                     <!-- Tên API 1 -->
+                     <div class="form-group">
+                         <label for="api-name-1">Tên API</label>
+                         <div class="input-group">
+                             <select id="api-name-1">
+                                 <option value="hr-system">API tích hợp với hệ thống quản lý nhân sự</option>
+                                 <option value="payment">API tích hợp với hệ thống thanh toán</option>
+                             </select>
+                             <label for="policy-1">Policy<span>*</span></label>
+                             <select id="policy-1">
+                                 <option value="gold">Vàng</option>
+                                 <option value="silver">Bạc</option>
+                                 <option value="bronze">Đồng</option>
+                             </select>
+                         </div>
+                     </div>
+         
+                     <!-- Tên API 2 -->
+                     <div class="form-group">
+                         <label for="api-name-2">Tên API</label>
+                         <div class="input-group">
+                             <select id="api-name-2">
+                                 <option value="hr-system">API tích hợp với hệ thống quản lý nhân sự</option>
+                                 <option value="payment">API tích hợp với hệ thống thanh toán</option>
+                             </select>
+                             <label for="policy-2">Policy<span>*</span></label>
+                             <select id="policy-2">
+                                 <option value="gold">Vàng</option>
+                                 <option value="silver">Bạc</option>
+                                 <option value="bronze">Đồng</option>
+                             </select>
+                             
+                         </div>
+                         <div class="icon-group">
+                            <a class="add-btn">+</a>
+                            <a class="remove-btn">-</a>
+                        </div>
+                     </div>
+                    </form>
+                    <hr>
+                    <!-- Action Buttons -->
+                    <div class="action-buttons">
+                        <button type="button" class="cancel-btn">Hủy</button>
+                        <button type="submit" class="save-btn">Lưu</button>
+                    </div>
+             </div>
+         </div>
+
+         <!-- Modal View Package -->
+          <div class="modal-view">
+            <div class="container-2">
+                <h2>XEM PACKAGE</h2>
+                
+                <!-- Package Details -->
+                <div class="package-info">
+                    <div class="info-item">
+                        <label for="package-name">Tên package:</label>
+                        <span id="package-name">Gói miễn phí</span>
+                    </div>
+                    <div class="info-item">
+                        <label for="status">Trạng thái:</label>
+                        <label class="switch">
+                            <input type="checkbox" id="status" checked>
+                            <span class="slider round"></span>
+                        </label>
+                        <span class="status-text">Đang hoạt động</span>
+                    </div>
+                    <div class="info-item">
+                        <label for="version">Phiên bản:</label>
+                        <span id="version">Ứng dụng</span>
+                    </div>
+                </div>
+        
+                <!-- API Table -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>TÊN API</th>
+                            <th>URL</th>
+                            <th>MÔ TẢ</th>
+                            <th>POLICY</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>API tích hợp với hệ thống ký số</td>
+                            <td>.console-api/certification/profile/create</td>
+                            <td>-</td>
+                            <td>Đồng</td>
+                        </tr>
+                        <tr>
+                            <td>API tích hợp để lấy thông tin tài sản từ hệ thống kế toán</td>
+                            <td>.console-api/certification/profile/create</td>
+                            <td>-</td>
+                            <td>Vàng</td>
+                        </tr>
+                        <tr>
+                            <td>API tích hợp với hệ thống thông tin nhân sự</td>
+                            <td>.console-api/certification/profile/create</td>
+                            <td>-</td>
+                            <td>Bạc</td>
+                        </tr>
+                    </tbody>
+                </table>
+        
+                <!-- Close Button -->
+                <div class="action-buttons">
+                    <button type="button" class="close-btn">Đóng</button>
+                </div>
+            </div>
+          </div>
+    </main>
+    <script>
+        const createPackage = document.querySelector('.create-package')
+        const modal = document.querySelector('.modal')
+        const cancelBtn = document.querySelector('.cancel-btn')
+        const viewPackageButton = document.querySelector('.update')
+        const modelViewPackage = document.querySelector('.modal-view')
+        const closeBtn = document.querySelector('.close-btn')
+
+        createPackage.addEventListener('click', () => {
+            modal.style.display = "flex"
+        })
+
+        cancelBtn.addEventListener('click', () => {
+            modal.style.display = "none"
+        })
+
+        viewPackageButton.addEventListener('click', () => {
+            modelViewPackage.style.display = "flex"
+        })
+
+        closeBtn.addEventListener('click', () => {
+            modelViewPackage.style.display = "none"
+        })
+    </script>
+</body>
+</html>

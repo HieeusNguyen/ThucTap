@@ -164,8 +164,31 @@ form {
     width: 600px;
 }
 
+.form-group #user-option{
+    width: 600px;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 1.6rem;
+}
+
+.view-api{
+    padding: 8px 16px;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 4px;
+}
 .form-group span{
     color: red;
+}
+
+.title{
+    font-weight: 600;
+    margin: 20px 0;
 }
 
 label {
@@ -216,13 +239,12 @@ input[type="text"], input[type="password"]  {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .container{
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
 }
 
 .container textarea{

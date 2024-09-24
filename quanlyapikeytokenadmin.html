@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="./assets/quanlyapikeytoken.css">
+    <link rel="stylesheet" href="./assets/quanlyapikeytokenadmin.css">
 </head>
 <body>
     <main>
@@ -56,7 +56,6 @@
                         </div>
                         <div id="content">
                             <!-- Nội dung sẽ thay đổi ở đây -->
-            
                         </div>
                     </form>
             </div>
@@ -70,10 +69,24 @@
             if (selectedOption) {
                 if (selectedOption.value === 'option1') {
                     contentDiv.innerHTML = `<div class="form-group">
+                                <label for="username">Tên đăng nhập<span>*</span></label>
+                                <select name="user" id="user-option">
+                                    <option value="">Người dùng 1</option>
+                                    <option value="">Người dùng 2</option>
+                                </select>
+                             </div>
+
+                             <div class="center">
+                                 <button class="view-api">XEM</button>
+                             </div>
+                            
+                             <p class="title">API KEY</p>
+
+                            <div class="form-group">
                                 <label for="expiry-time">Exsprise time<span>*</span></label>
                                 <div class="input-with-icon">
-                                <input type="text" id="expiry-time" value="23/02/2023 | 15:20:00">
-                                <span class="calendar-icon">📅</span>
+                                    <input type="text" id="expiry-time" value="23/02/2023 | 15:20:00">
+                                    <span class="calendar-icon">📅</span>
                                 </div>
                             </div>
             
@@ -87,16 +100,30 @@
                                 <input type="text" id="ip" value="192.168.1.1" required>
                             </div>
 
-                            <div class="center">
-                                <button type="submit" class="submit-btn">TẠO API KEY</button>
+                            <div class="container">
+                                <label for="ip">API key</label>
+                                <textarea name="api-key" id="api-key" rows="9"></textarea>
                             </div>
 
-                            <div class="container">
-                                <label for="ip">API KEY</label>
-                                <textarea name="api-key" id="api-key" rows="9"></textarea>
+                            <div class="center">
+                                <button type="submit" class="submit-btn">THU HỒI</button>
                             </div>`;
                 } else if (selectedOption.value === 'option2') {
                     contentDiv.innerHTML = `<div class="form-group">
+                                <label for="username">Tên đăng nhập<span>*</span></label>
+                                <select name="user" id="user-option">
+                                    <option value="">Người dùng 1</option>
+                                    <option value="">Người dùng 2</option>
+                                </select>
+                             </div>
+
+                             <div class="center">
+                                 <button class="view-api">XEM</button>
+                             </div>
+                            
+                             <p class="title">TOKEN</p>
+
+                            <div class="form-group">
                                 <label for="domain">Consumer Key<span>*</span></label>
                                 <input type="text" id="domain" value="hilo.vn" required>
                             </div>
@@ -106,7 +133,7 @@
                                 <input type="password" id="ip" value="192.168.1.1" required>
                             </div>
                             <div class="center">
-                                <button type="submit" class="submit-btn">TẠO ACCESS TOKEN</button>
+                                <button type="submit" class="submit-btn">THU HỒI</button>
                             </div>`;
                 }
             }

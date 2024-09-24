@@ -31,7 +31,7 @@ display: flex;
 
 /* Navigation-Bar */
 .navbar{
-    width: 265px;
+    width: 300px;
     height: 100vh;
     background-color: #000;
     padding: 20px;
@@ -65,7 +65,7 @@ display: flex;
     display: block;
 }
 
-.feature-1, .feature-2{
+.feature-1, .feature-2, .feature-3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,7 +81,7 @@ display: flex;
     height: 20px;
 }
 
-.feature-2 a{
+.feature-2 a, .feature-3 a{
     color: #999;
 }
 
