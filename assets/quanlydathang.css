@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Arial, sans-serif;
+}
+
+main{
+display: flex;
+}
+
+.content{
+    width: 100%;
+    margin: 40px 50px 0;
+}
+
+/* Navigation-Bar */
+.navbar{
+    width: 300px;
+    height: 100vh;
+    background-color: #000;
+    padding: 20px;
+    position: relative;
+}
+
+.navbar .left{
+    padding: 8px 0;
+    position: absolute;
+    right: -20px;
+    top: 50%;
+}
+
+.navbar .left img{
+    width: 24px;
+    height: 24px;
+    padding: 8px 0;
+    background-color: #777;
+    border-radius: 8px;
+}
+
+/* Feature */
+.features{
+    margin-top: 50px;
+}
+
+.features a{
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    display: block;
+}
+
+.feature-1, .feature-2,.feature-2-1, .feature-3, .feature-4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.feature-1 img{
+    width: 20px;
+    height: 20px;
+}
+
+.feature-1 a,
+.feature-2 a,
+.feature-2-1 a,
+.feature-3 a,
+.feature-4 a{
+    color: #999;
+}
+
+/* Action */
+.tool{
+    display: flex;
+    justify-content: end;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+
+.action{
+    display: flex;
+    justify-content: center;
+}
+
+.action a{
+    margin-left: 20px;
+}
+
+.action img{
+    height: 24px;
+    width: 24px;
+}
+
+.action .user{
+    display: flex;
+   align-items: center;
+}
+
+.action .bell{
+    position: relative;
+}
+
+.action .bell::after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+}
+
+.action span{
+    font-family: sans-serif;
+}
+
+.btn-cta{
+    display: flex;
+    align-items: center;
+    gap: 5px;    
+    border: 2px solid #aaa;
+    padding: 5px 20px 5px 5px;
+    position: absolute;
+    bottom: -20px;
+    right: 400px;
+    background-color: #ddd;
+    color: #000;
+    font-family: sans-serif;
+}
+
+.btn-cta img{
+    width: 24px;
+    height: 24px;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button.view {
+    color: #007bff;
+}
+
+button.edit {
+    color: #28a745;
+}
+
+span.active {
+    background-color: #e0f7fa;
+    color: #007bff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+span.inactive {
+    background-color: #f0f0f0;
+    color: #999;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+span.pending {
+    background-color: #fff7e6;
+    color: #ffc107;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.pagination button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.pagination span {
+    margin-left: 10px;
+    color: #666;
+}
+ 
+/* Modal */
+.modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-container {
+    width: 400px;
+    background-color: white;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #007bff;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+span {
+    color: #666;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 8px;
+    resize: none;
+}
+
+textarea::placeholder {
+    color: #ccc;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.withdraw {
+    background-color: #007bff;
+    color: white;
+}
+
+button.cancel {
+    background-color: #f0f0f0;
+    color: #333;
+}

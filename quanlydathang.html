@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/quanlydathang.css">
+</head>
+<body>
+    <main>
+        <nav class="navbar">
+            <a href="#!">
+                <img src="./image/menu-icon.png" alt="">
+            </a>
+            <div class="features">
+                <div class="feature-1">
+                    <a href="./quanlygoidichvu.html">QUẢN LÝ GÓI DICH VỤ</a>
+                </div>
+                <div class="feature-4">
+                    <a href="./quanlypackage.html">QUẢN LÝ PACKAGE</a>
+                </div>
+                <div class="feature-2">
+                    <a href="./quanlyapikeytoken.html">QUẢN LÝ API KEY/TOKEN</a>
+                </div>
+                <div class="feature-2-1">
+                    <a href="./quanlyapikeytokenadmin.html">QUẢN LÝ API KEY/TOKEN A</a>
+                </div>
+                <div class="feature-3">
+                    <a href="./quanlyapikeytoken.html">QUẢN LÝ ĐẶT HÀNG</a>
+                </div>
+            </div>
+            <a href="#!" class="left">
+                <img src="./image/left-icon.png" alt="">
+            </a>
+        </nav>
+        <div class="content">
+            <div class="tool">
+                <div class="action">
+                    <a href="#!" class="task">
+                        <img src="./image/task-icon.png" alt="">
+                    </a>
+                    <a href="#!" class="bell">
+                        <img src="./image/bell-icon.png" alt="">
+                    </a>
+                    <a href="#!" class="user">
+                        <span>Xin chào [Họ tên]</span>
+                        <img src="./image/down-icon.png" alt="">
+                    </a>
+                </div>
+                <a href="#!" class="btn-cta">
+                    <img src="./image/task-icon.png" alt="">
+                    <span>Đăng ký dịch vụ</span>
+                </a>
+            </div>
+            <div class="body">
+                <div class="container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tên Package</th>
+                                <th>Tên Đăng Nhập</th>
+                                <th>Hoạt Động</th>
+                                <th>Thời Gian Đặt Hàng</th>
+                                <th>Thời Gian Bắt Đầu</th>
+                                <th>Thời Gian Hết Hạn</th>
+                                <th>Phiên Bản</th>
+                                <th>Trạng Thái</th>
+                                <th>Thao Tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gói Miễn phí</td>
+                                <td>ngocanh11</td>
+                                <td>Mua mới</td>
+                                <td>25/01/2023 | 11:00:20</td>
+                                <td>30/01/2023 | 11:00:20</td>
+                                <td>29/01/2026 | 11:00:20</td>
+                                <td>Thử nghiệm</td>
+                                <td><span class="active">Đang hoạt động</span></td>
+                                <td>
+                                    <button class="view">👁️</button>
+                                    <button class="edit">✏️</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Gói cơ bản</td>
+                                <td>manhtruong178</td>
+                                <td>Mua mới</td>
+                                <td>24/01/2023 | 10:25:10</td>
+                                <td>26/01/2023 | 12:00:20</td>
+                                <td>25/01/2026 | 11:00:20</td>
+                                <td>Ứng dụng</td>
+                                <td><span class="inactive">Ngừng hoạt động</span></td>
+                                <td>
+                                    <button class="view">👁️</button>
+                                    <button class="edit">✏️</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Gói nâng cao</td>
+                                <td>kieuoanh</td>
+                                <td>Mua thêm</td>
+                                <td>23/01/2023 | 15:00:00</td>
+                                <td></td>
+                                <td></td>
+                                <td>Ứng dụng</td>
+                                <td><span class="pending">Chờ phê duyệt</span></td>
+                                <td>
+                                    <button class="view">👁️</button>
+                                    <button class="edit">✏️</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            
+                    <div class="pagination">
+                        <button>01</button>
+                        <button>02</button>
+                        <button>03</button>
+                        <span>...</span>
+                        <button>110</button>
+                        <span>Hiển thị 01-10 trên 110 kết quả</span>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal">
+                    <div class="form-container">
+                        <h3>XỬ LÝ ĐẶT HÀNG</h3>
+                        <form>
+                            <div class="form-group">
+                                <label>Tên đăng nhập:</label>
+                                <span>kieuoanh</span>
+                            </div>
+                            <div class="form-group">
+                                <label>Tên package:</label>
+                                <span>Gói nâng cao</span>
+                            </div>
+                            <div class="form-group">
+                                <label>Phiên bản:</label>
+                                <span>Ứng dụng</span>
+                            </div>
+                            <div class="form-group">
+                                <label>Hình thức thanh toán:</label>
+                                <span>Tiền mặt</span>
+                            </div>
+                            <div class="form-group">
+                                <label>Hoạt động:</label>
+                                <span>Mua thêm</span>
+                            </div>
+                            <div class="form-group">
+                                <label>Thời gian đặt hàng:</label>
+                                <span>23/01/2023 | 15:00:00</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="reason">Lý do:</label>
+                                <textarea id="reason" placeholder="Nhập lý do"></textarea>
+                            </div>
+                            <div class="form-buttons">
+                                <button type="submit" class="withdraw">Thu hồi</button>
+                                <button type="button" class="cancel">Hủy</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
