@@ -268,7 +268,7 @@ span.pending {
 }
  
 /* Modal */
-.modal{
+.modal, .modal-2{
     display: none;
     justify-content: center;
     align-items: center;
@@ -346,6 +346,11 @@ textarea::placeholder {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+button.destroy{
+    background-color: red;
+    color: #fff;
 }
 
 button.withdraw {
