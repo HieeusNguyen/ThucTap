@@ -48,80 +48,95 @@
                         <img src="./image/down-icon.png" alt="">
                     </a>
                 </div>
-                <a href="#!" class="btn-cta">
-                    <img src="./image/task-icon.png" alt="">
-                    <span>Đăng ký dịch vụ</span>
-                </a>
             </div>
             <div class="body">
                 <div class="container">
                     <table>
                         <thead>
                             <tr>
-                                <th>Tên Package</th>
-                                <th>Tên Đăng Nhập</th>
-                                <th>Hoạt Động</th>
-                                <th>Thời Gian Đặt Hàng</th>
-                                <th>Thời Gian Bắt Đầu</th>
-                                <th>Thời Gian Hết Hạn</th>
-                                <th>Phiên Bản</th>
-                                <th>Trạng Thái</th>
-                                <th>Thao Tác</th>
+                                <th></th>
+                                <th>TÊN PACKAGE</th>
+                                <th>TÊN ĐĂNG NHẬP</th>
+                                <th>HOẠT ĐỘNG</th>
+                                <th>THỜI GIAN <br> ĐẶT HÀNG</th>
+                                <th>THỜI GIAN <br> BẮT ĐẦU</th>
+                                <th>THỜI GIAN <br> HẾT HẠN</th>
+                                <th>PHIÊN BẢN</th>
+                                <th>TRẠNG THÁI</th>
+                                <th>THAO TÁC</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
+                                <td><input type="checkbox" name="" id=""></td>
                                 <td>Gói Miễn phí</td>
                                 <td>ngocanh11</td>
                                 <td>Mua mới</td>
-                                <td>25/01/2023 | 11:00:20</td>
-                                <td>30/01/2023 | 11:00:20</td>
-                                <td>29/01/2026 | 11:00:20</td>
+                                <td style="width: 150px;">25/01/2023 | 11:00:20</td>
+                                <td style="width: 150px;">30/01/2023 | 11:00:20</td>
+                                <td  style="width: 150px;">29/01/2026 | 11:00:20</td>
                                 <td>Thử nghiệm</td>
                                 <td><span class="active">Đang hoạt động</span></td>
                                 <td>
-                                    <button class="view">👁️</button>
-                                    <button class="edit">✏️</button>
+                                    <div class="action">
+                                        <button class="view"><img src="./image/return-icon.png" alt=""></button>
+                                        <button class="edit"><img src="./image/pointer-icon.png" alt=""></button>
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
+                                <td><input type="checkbox" name="" id=""></td>
                                 <td>Gói cơ bản</td>
                                 <td>manhtruong178</td>
                                 <td>Mua mới</td>
-                                <td>24/01/2023 | 10:25:10</td>
-                                <td>26/01/2023 | 12:00:20</td>
-                                <td>25/01/2026 | 11:00:20</td>
+                                <td style="width: 150px;">24/01/2023 | 10:25:10</td>
+                                <td style="width: 150px;">26/01/2023 | 12:00:20</td>
+                                <td style="width: 150px;">25/01/2026 | 11:00:20</td>
                                 <td>Ứng dụng</td>
                                 <td><span class="inactive">Ngừng hoạt động</span></td>
                                 <td>
-                                    <button class="view">👁️</button>
-                                    <button class="edit">✏️</button>
+                                    <div class="action">
+                                        <button class="view"><img src="./image/return-icon.png" alt=""></button>
+                                        <button class="edit"><img src="./image/pointer-icon.png" alt=""></button>
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
+                                <td><input type="checkbox" name="" id=""></td>
                                 <td>Gói nâng cao</td>
                                 <td>kieuoanh</td>
                                 <td>Mua thêm</td>
-                                <td>23/01/2023 | 15:00:00</td>
-                                <td></td>
-                                <td></td>
+                                <td style="width: 150px;">23/01/2023 | 15:00:00</td>
+                                <td style="width: 150px;"></td>
+                                <td style="width: 150px;"></td>
                                 <td>Ứng dụng</td>
                                 <td><span class="pending">Chờ phê duyệt</span></td>
                                 <td>
-                                    <button class="view">👁️</button>
-                                    <button class="edit">✏️</button>
+                                    <div class="action">
+                                        <button class="view"><img src="./image/return-icon.png" alt=""></button>
+                                        <button class="edit"><img src="./image/pointer-icon.png" alt=""></button>
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
             
                     <div class="pagination">
-                        <button>01</button>
-                        <button>02</button>
-                        <button>03</button>
-                        <span>...</span>
-                        <button>110</button>
-                        <span>Hiển thị 01-10 trên 110 kết quả</span>
+                        <div class="pagination-left">
+                            <p>Hiển thị 01-10 trên 110 kết quả</p>
+                        </div>
+                        <div class="pagination-right">
+                            <a href="#" class="disabled icon"><img src="./image/left-black-icon.png" alt=""></a>
+                            <a href="#" class="active">01</a>
+                            <a href="#">02</a>
+                            <a href="#">03</a>
+                            <span class="dots">...</span>
+                            <a href="#">110</a>
+                            <a href="#" class="icon"><img src="./image/right-black-icon.png" alt=""></a>
+                            <select>
+                                <option value="10">10/trang</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
 
@@ -130,33 +145,41 @@
                     <div class="form-container">
                         <h3>XỬ LÝ ĐẶT HÀNG</h3>
                         <form>
-                            <div class="form-group">
-                                <label>Tên đăng nhập:</label>
-                                <span>kieuoanh</span>
+                            <div class="form-wrapper">
+                                <div class="form-group">
+                                    <label>Tên đăng nhập:</label>
+                                    <span>kieuoanh</span>
+                                </div>
+                                <div class="form-group">
+                                    <label>Tên package:</label>
+                                    <span>Gói nâng cao</span>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label>Tên package:</label>
-                                <span>Gói nâng cao</span>
+
+                            <div class="form-wrapper">
+                                <div class="form-group">
+                                    <label>Phiên bản:</label>
+                                    <span>Ứng dụng</span>
+                                </div>
+                                <div class="form-group">
+                                    <label>Hình thức thanh toán:</label>
+                                    <span>Tiền mặt</span>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label>Phiên bản:</label>
-                                <span>Ứng dụng</span>
+
+                            <div class="form-wrapper">
+                                <div class="form-group">
+                                    <label>Hoạt động:</label>
+                                    <span>Mua thêm</span>
+                                </div>
+                                <div class="form-group">
+                                    <label>Thời gian đặt hàng:</label>
+                                    <span>23/01/2023 | 15:00:00</span>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label>Hình thức thanh toán:</label>
-                                <span>Tiền mặt</span>
-                            </div>
-                            <div class="form-group">
-                                <label>Hoạt động:</label>
-                                <span>Mua thêm</span>
-                            </div>
-                            <div class="form-group">
-                                <label>Thời gian đặt hàng:</label>
-                                <span>23/01/2023 | 15:00:00</span>
-                            </div>
-                            <div class="form-group">
+                            <div class="form-group reason-class">
                                 <label for="reason">Lý do:</label>
-                                <textarea id="reason" placeholder="Nhập lý do"></textarea>
+                                <textarea id="reason" cols="70" placeholder="Nhập lý do"></textarea>
                             </div>
                             <div class="form-buttons">
                                 <button type="submit" class="withdraw">Thu hồi</button>
@@ -168,5 +191,18 @@
             </div>
         </div>
     </main>
+    <script>
+        const view = document.querySelector('.view')
+        const modal = document.querySelector('.modal')
+        const cancelModal = document.querySelector('.cancel')
+
+        view.addEventListener('click', () => {
+            modal.style.display = "flex"
+        })
+
+        cancelModal.addEventListener('click', () => {
+            modal.style.display = "none"
+        })
+    </script>
 </body>
 </html>
