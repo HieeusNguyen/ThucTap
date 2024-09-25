@@ -38,18 +38,20 @@ display: flex;
 }
 
 .navbar .left{
-    padding: 8px 0;
     position: absolute;
     right: -20px;
     top: 50%;
+    background-color: #ccc;
+    width: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 0 8px 8px 0;
 }
 
 .navbar .left img{
-    width: 24px;
-    height: 24px;
-    padding: 8px 0;
-    background-color: #777;
-    border-radius: 8px;
+    width: 16px;
+    height: 16px;
 }
 
 /* Feature */
