@@ -229,7 +229,7 @@
                             <div class="form-buttons">
                                 <button type="submit" class="withdraw">Phê duyệt</button>
                                 <button type="submit" class="destroy">Từ chối</button>
-                                <button type="button" class="cancel">Hủy</button>
+                                <button type="button" class="cancel cancel-2">Hủy</button>
                             </div>
                         </form>
                     </div>
@@ -239,8 +239,11 @@
     </main>
     <script>
         const view = document.querySelector('.view')
+        const edit = document.querySelector('.edit')
         const modal = document.querySelector('.modal')
+        const modal2 = document.querySelector('.modal-2')
         const cancelModal = document.querySelector('.cancel')
+        const cancelModal2 = document.querySelector('.cancel-2')
 
         view.addEventListener('click', () => {
             modal.style.display = "flex"
@@ -252,6 +255,10 @@
 
         edit.addEventListener('click', () => {
             modal2.style.display = "flex"
+        })
+
+        cancelModal2.addEventListener('click', () => {
+            modal2.style.display = "none"
         })
     </script>
 </body>
